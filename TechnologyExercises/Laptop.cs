@@ -25,4 +25,3 @@ namespace TechnologyExercises
 }
 
 
-//commented out while testing Computer class

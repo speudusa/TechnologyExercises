@@ -5,11 +5,12 @@ namespace TechnologyExercises
     {
         public int NumberOfSelfies { get; set; }
 
-        //
+       
         public Smartphone( double ram, double storage, bool hasKeyboard, int numberOfSelfies) : base(ram, storage, hasKeyboard)
         {
             NumberOfSelfies = numberOfSelfies;
         }
+
 
         public int TakeSelfies()
         {
@@ -22,5 +23,3 @@ namespace TechnologyExercises
 
     }
 }
-
-//commented out while testing Computer class

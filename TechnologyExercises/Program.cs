@@ -7,25 +7,33 @@ namespace TechnologyExercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //checking out Computer class
+            Console.WriteLine("Hello, Computer!!");
             Computer testComputer = new Computer(8, 128, true);
-            Console.WriteLine(testComputer.Ram);
-            Console.WriteLine(testComputer.IncreaseRam(4));
-            Console.WriteLine();
-            Console.WriteLine(testComputer.Storage);
-            Console.WriteLine(testComputer.IncreaseStorage(128));
+            Console.WriteLine("Inital ram: " + testComputer.Ram);
+            Console.WriteLine("Increased ram: " + testComputer.IncreaseRam(4));
+            Console.WriteLine("Inital storage: " + testComputer.Storage);
+            Console.WriteLine("Increased Storage: " + testComputer.IncreaseStorage(128));
 
+
+            //checking out Laptop class
+            Console.WriteLine("\nHello, Laptop!");
             Laptop testLaptop = new Laptop(8, 236, true, 2.6);
-            Console.WriteLine(testLaptop.IsClunky());
+            Console.WriteLine("Laptop weight:" + testLaptop.Weight);
+            Console.WriteLine("Laptop weighs more than 5 pounds: " + testLaptop.IsClunky());
+           
+            Laptop testLaptop2 = new Laptop(8, 236, true, 7.6);
+            Console.WriteLine("Laptop weight:" + testLaptop2.Weight);
+            Console.WriteLine("Laptop weighs more than 5 pounds: " + testLaptop2.IsClunky());
 
+
+            //checking Smartphone class
+            Console.WriteLine("\nHello, Smartphone!");
             Smartphone testPhone = new Smartphone(12, 128, true, 50);
-            Console.WriteLine(testPhone.NumberOfSelfies);
-            Console.WriteLine(testPhone.TakeSelfies());
-            Console.WriteLine(testPhone.NumberOfSelfies);
-
-
-            //creating student examples that work for parts 1 & 2
-            //currently laptop and smartphone commented out - testing computer class
+            Console.WriteLine("Initial # of selfies: " + testPhone.NumberOfSelfies);
+            testPhone.TakeSelfies();
+            Console.WriteLine("Increased # of selfies: " + testPhone.NumberOfSelfies);
+            
         }
     }
 }

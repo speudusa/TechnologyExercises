@@ -1,7 +1,7 @@
 ﻿using System;
 namespace TechnologyExercises
 {
-    public class Computer
+    public class Computer : AbstractEntity 
     {
         public double Ram { get; set; }
         public double Storage { get; set; }
@@ -26,5 +26,6 @@ namespace TechnologyExercises
         {
            return Storage += extraStorage;
         }
+
     }
 }
