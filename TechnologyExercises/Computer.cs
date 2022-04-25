@@ -26,20 +26,5 @@ namespace TechnologyExercises
         {
            return Storage += extraStorage;
         }
-
-        public override bool Equals(object obj)
-        {
-            return base.Equals(obj);
-        }
-
-        public override string ToString()
-        {
-            return base.ToString();
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
     }
 }
